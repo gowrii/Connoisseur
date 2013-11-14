@@ -1,5 +1,5 @@
 Connoisseur::Application.routes.draw do
-
+  
   resources :products 
   resources :stores
 
