@@ -1,0 +1,17 @@
+<h1><%= @store['name'] %></h1>
+
+<%= @store['name'] %><br\>
+<%= @store['address_line_1'] %><br/>
+<%= @store['address_line_2'] %><br/>
+<%= @store['city'] %>, <%= @store['postal_code'] %><br/>
+
+<h3>Hours</h3>
+Monday:  <%= @store['monday_open'] %> - <%= @store['monday_close'] %><br/>
+Tuesday: <%= @store ['tuesday_open'] %> - <%= @store ['tuesday_close'] %><br/>
+Wednesday: <%= @store ['wednesday_open'] %> - <%= @store ['wednesday_close'] %><br/>
+Thursday: <%= @store ['thursday_open'] %> - <%= @store ['thursday_close'] %><br/>
+Friday: <%= @store ['friday_open'] %> - <%= @store ['friday_close']%><br/>
+Saturday: <%= @store ['saturday_open'] %> - <%= @store ['saturday_close'] %><br/>
+Sunday: <%= @store ['sunday_open'] %> - <%= @store ['sunday_close'] %><br/>
+<br/>
+<%= link_to "Back to all LCBO Stores", stores_path %>

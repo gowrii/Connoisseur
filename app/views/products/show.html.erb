@@ -1,0 +1,11 @@
+<h1>Product Page</h1>
+
+<%= @product['name'] %><br/>
+<%= formatted_price @product['price_in_cents'] %><br/>
+<%= @product['primary_category'] %><br/>
+
+Inventory in all LCBO stores: <%= @product['inventory_count'] %>
+<br/>
+<br/>
+<%= link_to "Back", products_path %><br/>
+

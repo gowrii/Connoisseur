@@ -1,0 +1,11 @@
+<h1>LCBO product list</h1>
+
+
+<% @products['result'].each do |product| %>
+
+	<section>
+		<%= link_to product['name'], product_path(product['id']) %>
+		<%= formatted_price product['price_in_cents'] %>
+		<%= product['primary_category'] %>
+	</section>
+<% end %>
